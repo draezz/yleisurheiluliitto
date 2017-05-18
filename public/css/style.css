@@ -1,0 +1,170 @@
+body{
+	padding-top: 50px;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+body, html{
+	overflow-x: hidden; 
+}
+
+/* NAV */
+
+.navbar{
+	background-color: #005ea8;
+	border: 0;
+	margin-bottom: 0px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	background-color: #FFF;
+	color: #005ea8;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	opacity: 0.8;
+	color: #FFF;
+}
+.navbar-default .navbar-nav > li > a{
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.navbar-default .navbar-toggle{
+	border: 0;
+}
+
+.navbar-brand{
+	padding: 0;
+}
+.navbar-brand img{
+	width: 330px;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #FFF;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: transparent;
+}
+
+/* HEADER */ 
+.frontpage-header {
+	text-align: center;
+	margin: 0 auto;
+	background-image: url(../images/frontpage.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+	padding: 250px 0;
+}
+
+.secondary-header {
+	text-align: center;
+	margin: 0 auto;
+	background-image: url(../images/frontpage.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+	padding: 150px 0;
+}
+.secondary-header h1{
+	color: #FFF;
+	font-weight: 700;
+}
+
+.frontpage-header h1{
+	color: #FFF;
+	font-weight: bold;
+}
+.btn{
+	border: 0;
+	outline: 0;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #005ea8;
+}
+.haasta-kaverit .btn{
+	background-color: #FFF;
+	color: #005ea8;
+}
+section{
+	padding: 60px 0;
+}
+.esittely h2{
+	margin-bottom: 40px;
+	color: #005ea8;
+}
+.esittely{
+	margin: 0 auto;
+	text-align: center;
+}
+.esittely p{
+	color: #005ea8;
+	font-size: 18px;
+}
+.haasta-kaverit{
+	position: relative;
+	background-image: url(../images/footer.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding: 100px 0;
+}
+.haasta-kaverit:after{
+	content: '';
+    opacity: .7;
+    background-color: #005ea8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.footer-content{
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 99;
+}
+.footer-content h2{
+	color: #FFF;
+}
+
+@media screen and (max-width: 1340px) {
+    .navbar-brand img {
+        width: 214px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+    	font-size: 28px;
+    }
+    h2{
+    	font-size: 24px;
+    }
+    .esittely p{
+    	font-size: 16px;
+    }
+    .frontpage-header{
+    	padding: 120px 0;
+    }
+    .secondary-header{
+    	padding: 80px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
