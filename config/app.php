@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://urheiluliitto.azurewebsites.net/'),
+    'url' => env('APP_URL', 'http://urheiluliitto.azurewebsites.net/public'),
 
     /*
     |--------------------------------------------------------------------------
